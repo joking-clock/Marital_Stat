@@ -8,9 +8,14 @@ Based on World Marriage Data 2017 from UN, demonstrate the rich functionalities 
 
 First, let us see the results first.
 - Using line charts to demonstrate the marital status changes in US and Japan between 1970 and 2010.
+![alt text][line_counrtries]
 - Using bar charts to demonstrate the marital status comparison between genders in US and Japan.
-- Using pie charts to demonstrate the comparison among different marital status in US and Japan.
-- Using line charts to demonstrate the marital status changes for 7 courtries (US, UK, France, South Africa, China, Japan, South Korea), from 1970 to 2010.
+![alt text][bar_usa_1975]
+![alt text][bar_usa_2010]
+![alt text][bar_jp_2010]
+- Using pie charts to demonstrate the comparison among different marital status in Japan.
+![alt text][pie_women_jp]
+![alt text][pie_men_jp]
 
 Next, let us see how to break down and achieve the goals.
 
@@ -291,8 +296,18 @@ After manipulation in above stage, the data would be ready to be shown in fancy 
 To demonstrate the married percentage comparison among different age groups and genders in USA, we can use bar charts.
 
 **One of the core concepts using matplotlib is to recognize what is the x and y in the chart**. Here we know different age groups should be as x-axis indices, and y-axis data should be percetanges. So we will have:
-
+![alt text][bar_usa_2010]
 
 Note that `plt.rcParams["figure.figsize"] = (20,3)` changes the figure size, here I wanted to have better effect to demonstrate the comparison.
 
 To demonstrate the complete marital status comparison between age groups, pie chart is a good choice. As pie charts only need one-dimentional data, here we feed percentages in different status to the charts.
+![alt text][pie_men_jp]
+
+***
+
+[line_counrtries]: https://github.com/joking-clock/Marital_Stat/blob/master/img/output_39_1.png
+[pie_men_jp]: https://github.com/joking-clock/Marital_Stat/blob/master/img/output_51_1.png
+[pie_women_jp]: https://github.com/joking-clock/Marital_Stat/blob/master/img/output_55_1.png
+[bar_usa_1975]: https://github.com/joking-clock/Marital_Stat/blob/master/img/output_42_0.png
+[bar_usa_2010]: https://github.com/joking-clock/Marital_Stat/blob/master/img/output_45_0.png
+[bar_jp_2010]: https://github.com/joking-clock/Marital_Stat/blob/master/img/output_46_0.png
